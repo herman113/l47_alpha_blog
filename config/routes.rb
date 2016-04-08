@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   root                   'pages#home'
   #get 'pages/about', to: 'pages#about' 
   get 'about', to: 'pages#about' 
+  get 'hermota', to: 'pages#hermota'
   
 
   # Example of regular route:
