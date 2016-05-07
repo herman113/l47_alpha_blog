@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <% flash.each do |name, msg| %><!--Why are there two iterators in the pipes?-->
+  <% flash.each do |name, msg| %><!--Why are there two iterators in the pipes? How does flash[:notice] work with this?-->
     <ul>
       <li><%= msg %></li>
     </ul>
