@@ -6,13 +6,14 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-  <% flash.each do |name, msg| %><!--Why are there two iterators in the pipes? How does flash[:notice] work with this?-->
-    <ul>
-      <li><%= msg %></li>
-    </ul>
-  <% end %>
-<%= yield %>
+<body> 
+<%= render "layouts/navigation" %>
+<%= render "layouts/messages" %>
 
+<div class="container">
+  <%= yield %>  <!--What is yield again?-->
+</div> 
+
+<%= render "layouts/footer" %> 
 </body>
 </html>

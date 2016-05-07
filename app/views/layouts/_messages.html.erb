@@ -1,0 +1,5 @@
+ <% flash.each do |name, msg| %><!--Why are there two iterators in the pipes? How does flash[:notice] work with this?-->
+    <ul>
+      <li><%= msg %></li>
+    </ul>
+  <% end %>
