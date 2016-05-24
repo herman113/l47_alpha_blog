@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
   end
   
   def create
-    debugger
+    #debugger
     #render plain: params[:article].inspect #this will put the article hash browser view 
     #What is render exactly?
     @article = Article.new(article_params)#white list means remove block for title and description to go from browser to console?.who the hell blocks it!
