@@ -62,7 +62,7 @@ class ArticlesController < ApplicationController
       @article = Article.find(params[:id])
     end
     def article_params
-      params.require(:article).permit(:title, :description) #Can you type out the sytanx of the hash and explain the order starting from the top level key?
+      params.require(:article).permit(:title, :description, category_ids: [])#Can you type out the sytanx of the hash and explain the order starting from the top level key?
     end
     
     def require_same_user
